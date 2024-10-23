@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="600.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.homepagecontroller">
+   <children>
+      <ImageView fitHeight="348.0" fitWidth="600.0" layoutX="1.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@budget.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="createAccountbtn" layoutX="513.0" layoutY="14.0" mnemonicParsing="false" onAction="#account" style="-fx-background-color: #90D5FF;" text="New Account" />
+      <Button fx:id="viewdatebtn" layoutX="431.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #90D5FF;" text="View Data" />
+      <Button fx:id="aboutbtn" layoutX="370.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #90D5FF;" text="About" />
+   </children>
+</AnchorPane>

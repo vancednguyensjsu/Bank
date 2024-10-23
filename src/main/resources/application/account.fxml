@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="600.0" style="-fx-background-color: #00A36C;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.accountcontroller">
+   <children>
+      <ImageView fitHeight="365.0" fitWidth="314.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@budget1.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="backbtn" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onAction="#homewindow" text="Back" />
+      <Label layoutX="320.0" layoutY="38.0" text="Create New Account" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="126.0" text="Account Name:" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="320.0" layoutY="145.0" prefHeight="26.0" prefWidth="114.0" promptText="Name" />
+      <Label layoutX="320.0" layoutY="183.0" text="Opening Date:" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <DatePicker layoutX="320.0" layoutY="202.0" />
+      <Label layoutX="320.0" layoutY="236.0" text="Opening Balance" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="320.0" layoutY="261.0" prefHeight="26.0" prefWidth="114.0" promptText="\$0.00" />
+      <Button layoutX="320.0" layoutY="310.0" mnemonicParsing="false" style="-fx-background-color: #478778;" text="Submit" textFill="WHITE" />
+   </children>
+</AnchorPane>
