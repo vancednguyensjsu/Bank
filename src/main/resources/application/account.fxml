@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="600.0" style="-fx-background-color: #00A36C;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.accountcontroller">
    <children>
       <ImageView fitHeight="365.0" fitWidth="314.0" pickOnBounds="true" preserveRatio="true">
@@ -28,7 +27,7 @@
             <Font size="13.0" />
          </font>
       </Label>
-      <TextField layoutX="320.0" layoutY="145.0" prefHeight="26.0" prefWidth="114.0" promptText="Name" />
+      <TextField fx:id="accountText" layoutX="320.0" layoutY="145.0" prefHeight="26.0" prefWidth="114.0" promptText="Name" />
       <Label layoutX="320.0" layoutY="183.0" text="Opening Date:" textFill="WHITE">
          <font>
             <Font size="13.0" />
@@ -41,6 +40,6 @@
          </font>
       </Label>
       <TextField layoutX="320.0" layoutY="261.0" prefHeight="26.0" prefWidth="114.0" promptText="\$0.00" />
-      <Button layoutX="320.0" layoutY="310.0" mnemonicParsing="false" style="-fx-background-color: #478778;" text="Submit" textFill="WHITE" />
+      <Button fx:id="submitBtn" layoutX="320.0" layoutY="310.0" mnemonicParsing="false" onAction="#submit" style="-fx-background-color: #478778;" text="Submit" textFill="WHITE" />
    </children>
 </AnchorPane>
